@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8">
+  <meta name="description" content="daily work ">
+  <meta name="keywords" content="Unit5-02">
+  <meta name=author" content="Jordan Wang">
+  <meta name="viewport' content='width=device-width, initial-scale=1.0">
+        <title> </title>
+    </head>
+    <body>
+        <p>put a numbe in it will tell you if it's positive or negative</p>
+<p><input id="number" type="text" placeholder="Enter the number"/></p>
+<p><button onclick="setGreeting()">check</button></p>
+<script>
+    function setGreeting()
+{
+    var greeting = document.getElementById("number").value;
+    var zero=0
+    if (greeting > zero) 
+    {
+        greeting="positive";
+    }
+    else if (greeting< zero)
+    {
+        greeting="negative";
+    }
+    document.getElementById("number").value = greeting;
+}
+    </script>
+    </body>
+    
+    
+</html>
